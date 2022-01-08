@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    height: 250px;
+    background: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
+}
+header .header-area{
+    width: 900px;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+header .header-area .text-area {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: #FFF;
+    font-size: 24px;
+}
+header .header-area .search-area {
+    width: 900px;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.2);
+}
+header .header-area .search-area img {
+    height: 23px;
+    position: absolute;
+    padding-left: 15px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+header .header-area .search-area .search {
+    width: 850px;
+    height: 65px;
+    background: none;
+    border: none;
+    margin-left: 50px;
+
+}
+header .header-area .search-area .search::placeholder {
+    position: relative;
+    width: 154px;
+    height: 22px;
+    font-family: 'Inter';
+    font-size: 19px;
+    font-weight: 500;
+    color: #FFF;
+    border: none;
+    opacity: 0.5;
+}
+
+.pesquisa-campo {
+    margin-top: 70px;
+}
+.pesquisa {
+    width: 900px;
+    height: 195px;
+    margin: auto;
+    border: 1px solid #CCC;
+    margin-bottom: 10px;
+}
+
+.pesquisa-campo a {
+    text-decoration: none;
+}
+.pesquisa-campo .pesquisa-item .pesquisa-item--infotop {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.pesquisa-campo .pesquisa-item .pesquisa-item--infotop .pesquisa-item--infotop-date {
+    color: #717171;
+    font-size: 16px;
+    font-family: 'Lexend Deca';
+    line-height: 16px;
+}
+.pesquisa-campo .pesquisa-item .pesquisa-item--info {
+    padding: 0px 20px;
+}
+.pesquisa-campo .pesquisa-item .pesquisa-item--info h1 {
+    color: #1A202c;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32.5px;
+    text-align: left;
+    font-family: 'Lexend Deca';
+}
+.pesquisa-campo .pesquisa-item .pesquisa-item--info p {
+    color: #717171;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Lexend Deca';
+}
