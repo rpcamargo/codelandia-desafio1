@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    overflow-X: hidden;
 }
 
 header {
@@ -9,10 +10,9 @@ header {
     background: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
 }
 header .header-area{
-    width: 900px;
+    max-width: 900px;
     height: 100%;
     margin: auto;
-
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -99,4 +99,55 @@ header .header-area .search-area .search::placeholder {
     font-size: 18px;
     font-weight: 400;
     font-family: 'Lexend Deca';
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 50px;
+    background: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
+    color: #FFF;
+}
+.footer p {
+    margin: auto;
+
+}
+.footer a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+
+@media (max-width:910px) {
+    .header-area {
+        width: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+    header .header-area .text-area {
+        width: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    header .header-area .search-area {
+        width: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .pesquisa {
+        width: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+        height: auto;
+    }
+}
+
+@media (max-width:450px) {
+    .footer {
+        flex-direction: column;
+    }
 }
