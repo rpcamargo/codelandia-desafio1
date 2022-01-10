@@ -110,9 +110,13 @@ header .header-area .search-area .search::placeholder {
     background: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
     color: #FFF;
 }
+.footer-area {
+    display: flex;
+    width: 900px;
+    margin: auto;
+}
 .footer p {
     margin: auto;
-
 }
 .footer a {
     text-decoration: none;
@@ -144,10 +148,18 @@ header .header-area .search-area .search::placeholder {
         margin-left: 20px;
         height: auto;
     }
+    .footer-area {
+        width: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .footer p:first-child{
+        margin-right: 20px;
+    }
 }
 
 @media (max-width:450px) {
-    .footer {
+    .footer-area {
         flex-direction: column;
     }
 }
